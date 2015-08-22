@@ -1,0 +1,246 @@
+/*
+    Robert Girhiny light theme
+    http://robertgirhiny.com
+*/
+
+
+.CodeMirror * {
+    color: #333;
+}
+.CodeMirror, .CodeMirror-scroll {
+    background: #fff; color: #07070d;
+    -webkit-box-shadow: inset 0 10px 20px white;
+    -moz-box-shadow: inset 0 10px 20px white;
+    box-shadow: inset 0 -10px 20px white;
+}
+.CodeMirror div.CodeMirror-selected {
+    background: rgba(255, 87, 57, 0.7) !important;
+}
+
+/* matching tag*/
+.CodeMirror .CodeMirror-matchingtag {
+    /*border-top: 1px solid #333;*/
+    border-bottom: 2px solid #333;
+}
+
+
+.CodeMirror-linenumbers {
+    width: 35px !important;
+}
+.CodeMirror-linenumber {
+    left: -5px !important;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
+.CodeMirror .cm-trailingspace {
+    background: #ddd !important;
+}
+.CodeMirror .CodeMirror-gutters {
+    background: #d8d7dd;
+    padding-right: 10px;
+    border: none;
+    -webkit-box-shadow: 0 10px 20px black;
+    -moz-box-shadow: 0 10px 20px black;
+    box-shadow: 0 10px 20px black;
+    margin: -10px;
+}
+.CodeMirror .CodeMirror-linenumber {color: #8a8ea1;}
+.CodeMirror .CodeMirror-cursor {
+    border-left: 1px solid #07070f !important;
+    /*border-right: 1px solid #f00 !important;*/
+}
+.CodeMirror .CodeMirror-matchingbracket { background: #ff5739 !important; text-decoration: none !important; }
+.CodeMirror .CodeMirror-nonmatchingbracket { color: #000; background: #28dddd !important; text-decoration: none !important; border-radius: 3px; }
+
+.CodeMirror span.cm-comment {color: #8a8ea1;}
+.CodeMirror span.cm-atom {color: #517e00;}
+.CodeMirror span.cm-number {color: #517e00;}
+
+.CodeMirror span.cm-property, .CodeMirror span.cm-attribute {color: #591dd1;}
+.CodeMirror span.cm-keyword {color: #07a6ce;}
+.CodeMirror span.cm-string {color: #19248b;}
+.CodeMirror span.cm-qualifier {color: #036ec5;}
+.CodeMirror span.cm-meta {color: #591dd1;}
+
+.CodeMirror span.cm-variable {color: #591dd1;}
+.CodeMirror span.cm-variable-2 {color: #036ec5;}
+.CodeMirror span.cm-builtin {color: #036ec5;}
+.CodeMirror span.cm-def {color: #0268e0;}
+.CodeMirror span.cm-bracket {color: #07070d; }
+.CodeMirror span.cm-tag {color: #036ec5;}
+.CodeMirror span.cm-link {color: #517e00;}
+.CodeMirror span.cm-error {background: #06d98d; color: #07070f;}
+
+.CodeMirror .CodeMirror-activeline-background {background: #c8c7ce !important;}
+.CodeMirror .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: white !important;
+}
+
+
+/*visualize tab character*/
+.CodeMirror .cm-tab:before {
+  content: " ";
+  color: #b7b5be;
+  position: absolute;
+  margin-left: 0.2em;
+  border-left: 1px dashed #b7b5be;
+}
+
+
+
+
+
+/* Alul a status bar*/
+/*#status-bar, #status-indicators {
+}*/
+#status-inspection, #status-indent, #status-language, #status-overwrite, #status-info, #status-file {
+    color: #000;
+}
+
+
+
+/* scrollbár háttér */
+.CodeMirror ::-webkit-scrollbar {
+    background-color: #ebebeb;
+}
+.CodeMirror ::-webkit-scrollbar-thumb {
+    box-shadow: 0 0 0 12px #c3c0be inset;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+.CodeMirror #editor-holder .dropdownbutton-popup.dropdown-menu .stylesheet-link {
+    background: red;
+}
+.CodeMirror #editor-holder .dropdownbutton-popup.dropdown-menu a.selected {
+    background-color: #a2a09f;
+    color: #fff !important;
+    font-weight: bold;
+}
+
+
+
+/* Gyorsszerkesztés jobb oldali menüje */
+.CodeMirror .related-container .selection:before {
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-left: 9px solid #333;
+}
+.CodeMirror .related-container .selection {
+    z-index: 10;
+    background: transparent;
+    position: absolute;
+    border-top: none;
+    border-bottom: none;
+}
+
+
+/* gyorsszerkesztés */
+.CodeMirror .inline-text-editor,
+.CodeMirror .inline-editor-header .btn-dropdown,
+.CodeMirror .inline-editor-holder .CodeMirror-linenumbers,
+.CodeMirror .related  {
+    background: #d8d7dd;
+    color: white;
+}
+.CodeMirror .inline-editor-header .btn-dropdown {
+    border-color: #a1a1a1;
+    text-shadow: none;
+}
+.CodeMirror .inline-text-editor {
+    box-shadow: -40px 0 40px #000 inset;
+}
+
+.CodeMirror .inline-editor-header .filename {
+    color: #000;
+}
+.CodeMirror .inline-editor-header .line-number {
+    color: #000;
+}
+.CodeMirror .related-container {
+    /*background: transparent;*/
+}
+.CodeMirror .related ul li, .related ul li span {
+    color: #333;
+}
+.CodeMirror .related ul li.selected {
+    background: #a2a09f;
+    color: #000;
+    font-weight: bold;
+}
+.CodeMirror .related ul li.selected span {
+    color: #fff;
+}
+
+
+
+/* Search selection */
+.CodeMirror .CodeMirror-searching {
+    background-color: transparent !important;
+    box-shadow: 0px 0px 10px 1px #aaa inset;
+    outline: 1px solid #111;
+}
+
+
+
+
+
+.CodeMirror .inline-widget {
+    background-color: #d8d7dd;
+    box-shadow: 0 0 20px #666 inset;
+}
+
+.CodeMirror .inline-widget a {
+    background: #b9b9b9;
+    border: none;
+    box-shadow: 0 0 10px #fff;
+    color: #333;
+    text-shadow: none;
+}
+.CodeMirror .inline-widget a:hover {
+    background-color: #cecece;
+    text-decoration: none;
+}
+
+
+
+.brackets-git-gutter-deleted-lines {
+    background: #fcc;
+}
+
+/*
+    Körbe a keret háttere
+ */
+#sidebar, #working-set-header, #open-files-container, #main-toolbar,
+#status-bar, #status-indicators,
+.sidebar.panel.quiet-scrollbars.horz-resizable.right-resizer.collapsible{
+    background-color: #bbb !important;
+    text-shadow: none !important;
+}
+#open-files-container .selected * {
+    color: #fff !important;
+}
+#sidebar * {
+    color: #000 !important;
+}
+.octicon-remove-close {
+    color: #777 !important;
+    text-shadow: 0px 1px 0px #555 !important;
+}
+
+#main-toolbar .buttons {
+    background: #888;
+    border-radius: 5px;
+}
+
+/*Oldalsávban kijelölt fájl*/
+.jstree-clicked, .jstree-clicked .extension {
+    color: #fff !important;
+}
+/*Oldalsávban átnevezéskor az input mező azonosítója*/
+.jstree-rename-input {
+    color: #fff !important;
+    width: 100% !important;
+}

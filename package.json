@@ -1,0 +1,15 @@
+{
+    "title": "Robcaa Light Theme",
+    "name": "robcaa-light-theme",
+    "description": "Light theme for brackets by Robcaa",
+	"homepage": "https://github.com/robcaa/robcaa-light-theme",
+    "version": "1.0.0",
+    "author": "Robert Girhiny <robcaa@gmail.com>",
+    "license": "MIT",
+    "theme": {
+        "file": "theme.less",
+        "dark": false,
+        "addModeClass": true
+    },
+	"keywords": ["theme"]
+}
